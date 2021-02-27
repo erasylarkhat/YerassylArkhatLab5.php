@@ -1,14 +1,7 @@
 @extends('main')
 @section('title', 'about')
 @section('content')
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<title>about</title>
-	
-<link rel="stylesheet" type="text/css" href="aboutstyle.css"><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> -->
+
 <style>
 	*{background-color: #f8f1f1;
 	margin: 0 auto;
@@ -26,22 +19,7 @@
 }.right_content h6{	margin-top: 50px;font-size: 20px;line-height: 1.8;
 }	
 </style>
-<!-- </head>
-<body>
-	<header>
-		<div class="header_left">
-			<div class="icon">
-				@earkhat
-			</div>
-		</div>
-		<div class="header_right">
-			<div class="links">Home</div>
-			<div class="links">About</div>
-			<div class="links">Pages</div>
-			<div class="links">Contacts</div>
-		</div>
-	</header>
- -->
+
 	<div class="content">
 		<div class="left_content">
 			<img src="about-us.png" style="width: 700px; height: 600px;">
@@ -59,5 +37,3 @@
 		</div>
 	</div>
 @endsection
-<!-- </body>
-</html> -->

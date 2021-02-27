@@ -16,7 +16,10 @@ header .header_right{font-family: 'Courgette', cursive;display: flex;
 	margin-top: 30px;
 	cursor: pointer;
 }.links:hover{
-	font-size: 35px;
+	font-size: 35px;}
+	.links a{
+		text-decoration: none;
+	}
 	</style>
 </head>
 <body>

@@ -8,24 +8,10 @@
 .content{height: 700px;width: 100%;max-width: 1400px;}.top_content{margin-top: 50px;display: flex;justify-content: space-between;}.left_content{font-size: 40px;margin-top: 100px;}.btns{margin-top: 20px;width: 450px;
 	display: flex;margin-left: -20px;}.aboutbtn, .gallerybtn{padding: 14px 38px;background-color: #fff3e6;color: #0d335d;
   font-size: 20px;border-radius: 5px;}.aboutbtn:hover, .gallerybtn:hover{background-color: transparent;transition: 300ms;
-	padding: 11px 32px;font-size: 23px;
-}
+	padding: 11px 32px;font-size: 23px; 
+} a{text-decoration: none;}
 </style>
-<!-- </head> -->
-<!-- <body>
-	<header>
-		<div class="header_left">
-			<div class="icon">
-				@earkhat
-			</div>
-		</div>
-		<div class="header_right">
-			<div class="links">Home</div>
-			<div class="links">About</div>
-			<div class="links">Pages</div>
-			<div class="links">Contacts</div>
-		</div>
-	</header> -->
+
 
 	<div class="content">
 		<div class="top_content">
@@ -43,6 +29,5 @@
 			</div>
 		</div>
 	</div>
-<!-- </body> -->
-<!-- </html> -->
+
 @endsection
