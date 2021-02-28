@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\DB;
+use App\Models\Post;
 
 
 Route::get('/', function () {
@@ -15,3 +16,19 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('gallery');
 })->name('contactme');
+
+
+Route::get('/post/create', function(){
+    DB::table('posts')->insert([
+        'id'=>2,
+        'title'=>'FirstPost',
+        'body'=>'Some text to first post'
+
+    ]);
+});
+Route::get('/post', function(){
+    $post = Post::orderBy('created_at', 'desc')->get();
+    return view('post', [
+    	'post'=>$post
+    ]);
+});

@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="galstyle.css"><link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 	<style>
 		header{width: 100%;height: 120px;display: flex;flex-wrap: wrap;
 	justify-content: space-between;
@@ -37,5 +38,6 @@ header .header_right{font-family: 'Courgette', cursive;display: flex;
 		</div>
 		@yield('content')
 	</header>
+
 </body>
 </html>
