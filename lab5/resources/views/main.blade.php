@@ -34,7 +34,7 @@ header .header_right{font-family: 'Courgette', cursive;display: flex;
 		<div class="header_right">
 			<div class="links"><a href="{{route('home')}}">Home</a></div>
 			<div class="links"><a href="{{route('aboutme')}}">About</a></div>
-			<div class="links"><a href="">Posts</a></div>
+			<div class="links"><a href="{{route('blogIndex')}}">Posts</a></div>
 			<div class="links"><a href="{{route('contactme')}}">Contacts</a></div>
 		</div>
 		@yield('content')

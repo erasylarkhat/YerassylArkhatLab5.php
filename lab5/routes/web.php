@@ -23,4 +23,6 @@ Route::get('/contact', function () {
 
 Route::get('/blog/create', [BlogController::class, 'blogCreater'])->name('blogCreate');
 
-Route::post('blog/submit', [BlogController::class, 'blogIndex']);
+Route::post('blog/submit', [BlogController::class, 'blogIndexSubmit']);
+
+Route::get('blog/index', [BlogController::class, 'blogIndex'])->name('blogIndex');
