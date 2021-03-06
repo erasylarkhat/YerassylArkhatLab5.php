@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 	<style>
+	*{background-color: #f8f1f1;margin: 0 auto;padding: 0;}
 		header{width: 100%;height: 120px;display: flex;flex-wrap: wrap;
 	justify-content: space-between;
 }.icon{font-family: 'Courgette', cursive;font-size: 30px;
@@ -33,7 +34,7 @@ header .header_right{font-family: 'Courgette', cursive;display: flex;
 		<div class="header_right">
 			<div class="links"><a href="{{route('home')}}">Home</a></div>
 			<div class="links"><a href="{{route('aboutme')}}">About</a></div>
-			<div class="links"><a href="">Pages</a></div>
+			<div class="links"><a href="">Posts</a></div>
 			<div class="links"><a href="{{route('contactme')}}">Contacts</a></div>
 		</div>
 		@yield('content')

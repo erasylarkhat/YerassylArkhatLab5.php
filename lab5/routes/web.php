@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+use App\Http\Controllers\BlogController;
 
 
 Route::get('/', function () {
@@ -18,17 +19,8 @@ Route::get('/contact', function () {
 })->name('contactme');
 
 
-Route::get('/post/create', function(){
-    DB::table('posts')->insert([
-        'id'=>2,
-        'title'=>'FirstPost',
-        'body'=>'Some text to first post'
 
-    ]);
-});
-Route::get('/post', function(){
-    $post = Post::orderBy('created_at', 'desc')->get();
-    return view('post', [
-    	'post'=>$post
-    ]);
-});
+
+Route::get('/blog/create', [BlogController::class, 'blogCreater'])->name('blogCreate');
+
+Route::post('blog/submit', [BlogController::class, 'blogIndex']);
