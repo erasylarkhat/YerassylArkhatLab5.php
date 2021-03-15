@@ -22,4 +22,12 @@ class BlogController extends Controller{
 		$data = Post::all();
 		return view('posts', ['posts'=>$data]);
 	}
+
+	public function get_blog($id){
+		$post = Post::find($id);
+
+		if($post == null) return response(404);
+
+		return $post;
+	}
 }

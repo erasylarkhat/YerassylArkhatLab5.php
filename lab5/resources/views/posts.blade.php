@@ -15,7 +15,8 @@
 </table>
 
 <button style="margin-top: 20px; margin-left: 5px; padding: 10px 20px;">
-	<a style="text-decoration: none;" href="{{ route('blogCreate') }}">ADD POST
+	<a style="text-decoration: none;" href="{{ route('blogCreate') }}">
+		ADD POST
 	</a>
 </button>
 

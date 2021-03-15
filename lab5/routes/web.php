@@ -26,3 +26,5 @@ Route::get('/blog/create', [BlogController::class, 'blogCreater'])->name('blogCr
 Route::post('blog/submit', [BlogController::class, 'blogIndexSubmit']);
 
 Route::get('blog/index', [BlogController::class, 'blogIndex'])->name('blogIndex');
+
+Route::get('post/{id}', [BlogController::class, 'get_blog']);
