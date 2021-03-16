@@ -23,11 +23,10 @@ class BlogController extends Controller{
 		return view('posts', ['posts'=>$data]);
 	}
 
-	public function get_blog($id){
+	public function get_post($id){
 		$post = Post::find($id);
 
-		if($post == null) return response(404);
-
-		return $post;
+		if($post == null) return response(['message' => 'post not found', 404]); 
+		else return view('post.detail')->with(['post' => $post]);
 	}
 }
